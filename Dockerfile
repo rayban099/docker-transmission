@@ -47,8 +47,10 @@ RUN \
 	/kettu --strip-components=1 && \
  echo "**** cleanup ****" && \
  rm -rf \
-	/tmp/*
-
+	/tmp/* && \
+ echo "**** adding mailx ****" && \
+ apk add --no-cache \
+ mailx
 
 # copy local files
 COPY root/ /
