@@ -20,7 +20,8 @@ RUN \
 	transmission-cli \
 	transmission-daemon \
 	unrar \
-	unzip && \
+	unzip \
+  mailx && \
  echo "**** install third party themes ****" && \
  curl -o \
 	/tmp/combustion.zip -L \
